@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PTv-co-bFk">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="oVE-R4-ajD">
+            <objects>
+                <viewController id="PTv-co-bFk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SmB-2p-8tG"/>
+                        <viewControllerLayoutGuide type="bottom" id="pX9-d5-7wm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MSF-Rd-ZC4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="amisecure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lE-GX-PKu">
+                                <rect key="frame" x="20" y="212" width="280" height="57"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.77590345670391059" green="0.77590345670391059" blue="0.77590345670391059" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97030493496168302" green="0.96995947243491876" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.18150868327713743" green="0.18144405983135742" blue="0.18706354748603349" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3lE-GX-PKu" firstAttribute="centerX" secondItem="MSF-Rd-ZC4" secondAttribute="centerX" id="g07-gQ-x7q"/>
+                            <constraint firstItem="3lE-GX-PKu" firstAttribute="centerY" secondItem="MSF-Rd-ZC4" secondAttribute="centerY" id="qmd-fT-jCf"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPw-M8-Glp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="561" y="144"/>
+        </scene>
+    </scenes>
+</document>

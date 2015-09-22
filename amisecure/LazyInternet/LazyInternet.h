@@ -13,6 +13,7 @@
     long long totalSize;
     CGFloat progress;
     NSTimer *timer;
+    NSMutableDictionary *additionalDict;
 }
 
 @property (strong, nonatomic) NSMutableData *activeDownload;
@@ -20,8 +21,6 @@
 
 - (void)startDownload:(NSString *)url withDelegate:(id)_delegate withUnique:(id)_unique;
 - (void)cancelDownload;
-- (NSMutableDictionary *)dataToDict:(NSData *)data;
-- (NSMutableArray *)dataToArr:(NSData *)data;
 
 @end
 
@@ -29,8 +28,8 @@
 @protocol LazyInternetDelegate <NSObject>
 
 - (void)lazyInternetDidLoad:(NSData*)data withUnique:(id)unique;
-- (void)lazyInternetGotSize:(long long)totalSize withUnique:(id)unique;
+- (void)lazyInternetGotSize:(int)totalSize withUnique:(id)unique;
 - (void)lazyInternetProgress:(CGFloat)currentProgress withUnique:(id)unique;
-- (void)lazyInternetDidFailWithError:(NSError *)error;
+- (void)lazyInternetDidFailWithError:(NSError *)error withUnique:(id)unique;
 
 @end

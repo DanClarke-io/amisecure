@@ -14,20 +14,11 @@
 
 @implementation breachListViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
--(int)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
+-(NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
     return 1;
 }
 
--(int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if(ourBreachList) { return [ourBreachList count]; }
     return 1;
 }
@@ -78,12 +69,35 @@
 }
 
 - (void)lazyInternetDidLoad:(NSData*)data withUnique:(id)unique {
-    ourBreachList = [getList dataToArr:data];
+    ourBreachList = [self dataToArr:data];
     [[self tableView] reloadData];
 }
 
-- (void)didReceiveMemoryWarning
-{
+-(void)lazyInternetGotSize:(int)totalSize withUnique:(id)unique { }
+-(void)lazyInternetDidFailWithError:(NSError *)error withUnique:(id)unique { NSLog(@"%@",error); }
+-(void)lazyInternetProgress:(CGFloat)currentProgress withUnique:(id)unique { }
+
+- (NSMutableDictionary *)dataToDict:(NSData *)data {
+    NSError *error;
+    NSMutableDictionary *json = [NSJSONSerialization
+                                 JSONObjectWithData:data
+                                 
+                                 options:kNilOptions
+                                 error:&error];
+    return json;
+}
+
+- (NSMutableArray *)dataToArr:(NSData *)data {
+    NSError *error;
+    NSMutableArray *json = [NSJSONSerialization
+                            JSONObjectWithData:data
+                            
+                            options:kNilOptions
+                            error:&error];
+    return json;
+}
+
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

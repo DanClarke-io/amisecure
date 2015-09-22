@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9E770D2FEBE0D4AF651305B2D5999CB14413EBB2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "ae9a069f-210c-4a1b-ac13-2ffc0613d7ab++6587" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9E770D2FEBE0D4AF651305B2D5999CB14413EBB2" : 0,
+    "ae9a069f-210c-4a1b-ac13-2ffc0613d7ab++6587" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C9CAF6C7-0F7E-4525-AA69-13CB3599E1D6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9E770D2FEBE0D4AF651305B2D5999CB14413EBB2" : "amisecure\/",
+    "ae9a069f-210c-4a1b-ac13-2ffc0613d7ab++6587" : "amisecure\/amisecure\/LazyInternet\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "amisecure",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "amisecure.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/OverByThere\/amisecure.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9E770D2FEBE0D4AF651305B2D5999CB14413EBB2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/overbythere.co.uk\/svn\/apple\/xcode",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ae9a069f-210c-4a1b-ac13-2ffc0613d7ab++6587"
+    }
+  ]
+}
